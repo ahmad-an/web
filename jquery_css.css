@@ -45,7 +45,7 @@
     height: 740px;
     background-color: steelblue;
     box-sizing: border-box;
-    float: left;
+    /* float: left; */
 } 
 .footer{
     width: 100%;
