@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: block;
+            margin: 20px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="wbnr1.jpg" id="pic1">
+    <img src="wbnr2.jpg" id="pic2">
+    <br>
+    <button id="btn">Hide Picture</button>
+    <script>
+        $(document).ready(function()
+        {
+            $("#btn").click(function()
+            {
+                $("#pic1").slideToggle();
+            
+                });
+            
+                $("#btn").click(function()
+            {
+                $("#pic2").slideDown();
+            
+                });
+            });
+        
+            
+        
+
+    </script>
+</body>
+</html>

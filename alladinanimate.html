@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        .alladin{
+            width: 300px;
+            height: 200px;
+            position: relative;
+            float: left;
+            top:200px;
+            left: 0px;
+        }
+        .genei{
+            width: 0px;
+            height: 0px;
+            float: left;
+            top: 264px;
+            left: -77px;
+            opacity: 0.2;
+            position: relative;
+            
+        }
+        .cartoon{
+            position: relative;
+            border: 1px solid red;
+            height: 400px;
+            width: 800px;
+            box-sizing: border-box;
+        }
+        span{
+            font-size:18px;
+            font-weight: bold;
+        }
+        .div-animate{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            display: inline-block;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cartoon">
+    <img src="charagh1.png" class="alladin" >
+    <img src="red-genie.png" class="genei">
+    
+    </div>
+    
+    <br>
+    <p>click the "Charagh" to free the <span>Genei</span></p>
+    
+    <!-- <div class="div-animate"></div>
+    <div class="div-animate"></div>
+    <div class="div-animate"></div>
+    <br>
+    <br><br>
+    <button class="btn2">Hu Ha Ha</button> -->
+    <script>
+        $(document).ready(
+        function()
+        {
+            $(".alladin").click(function()
+            {
+               
+                                
+                $(".genei").animate(
+                    {width:"300px", height:"250px", top:"40px", left:"75px", opacity:1.0}, 2000
+                    
+                    );
+                
+                $(".genei").animate(
+                    {width:"300px", height:"250px", top:"80px", left:"100px", opacity:0.3}, 2000
+                    
+                    );
+                
+                    $(".genei").animate(
+                    {width:"300px", height:"250px", top:"40px", left:"75px", opacity:1.0}, 2000
+                    
+                    );
+                
+                $(".genei").animate(
+                    {width:"300px", height:"250px", top:"80px", left:"100px", opacity:0.3}, 2000
+                    
+                    );
+                
+                $(".genei").animate(
+                    {width:"300px", height:"250px", top:"40px", left:"75px", opacity:1.0}, 2000
+                    
+                    );
+            });
+
+            // $(".btn2").click(function()
+            // {
+            //     $(".div-animate").animate(
+            //         {top:"20px" left:"300px"
+
+            //     }, 4000);
+
+            //     $(".div-animate").animate(
+            //         {top:"120px" left:"300px"
+
+            //     }, 4000);
+
+            //     $(".div-animate").animate(
+            //         {top:"120px" left:"20px"
+
+            //     }, 4000);
+
+            //     $(".div-animate").animate(
+            //         {top:"20px" left:"20px"
+
+            //     }, 4000);
+            // })
+
+        }
+        
+
+        );
+       
+    </script>
+</body>
+</html>
